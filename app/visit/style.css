@@ -1,0 +1,67 @@
+.color-list {
+  display: flex;
+  flex-direction: row-reverse;
+  /* height: 100vh; */
+  .color {
+    display: inline-block;
+    flex-direction: column;
+
+    flex: 1 0 10em;
+    box-shadow: 0 0 30px #424242;
+
+    /* Handles any clipping/overflow issues on transition */
+    overflow: hidden;
+    padding: 1em;
+    color: white;
+    transition: flex-basis 500ms ease-in-out;
+  }
+
+  .color:hover {
+    flex-basis: 20em;
+  }
+
+  .color:hover .details {
+    opacity: 1;
+  }
+  .details {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    li {
+      font-size: 1em;
+      line-height: 2em;
+    }
+  }
+}
+
+.items {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.items.active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+@media (min-width: 600px) {
+  .color-list {
+    flex-direction: row;
+  }
+
+  .color {
+    flex-shrink: 1;
+  }
+}

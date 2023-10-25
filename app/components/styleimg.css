@@ -1,0 +1,9 @@
+.zoom {
+  padding: 1px;
+
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale();
+}
