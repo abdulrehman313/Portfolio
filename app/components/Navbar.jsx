@@ -13,6 +13,7 @@ import {
   Button,
   IconButton,
   DrawerBody,
+  DrawerFooter,
 } from "@chakra-ui/react";
 import { HamburgerIcon, EditIcon } from "@chakra-ui/icons";
 import Image from "next/image";
@@ -127,6 +128,20 @@ const Navbar = () => {
                   </Link>
                 </Flex>
               </DrawerBody>
+              <DrawerFooter>
+                <Flex gap="30px">
+                  <Link href="https://www.facebook.com/profile.php?id=100008928465845">
+                    <Image src={fb} alt="fb " />
+                  </Link>
+                  <Link href="https://www.instagram.com/mr.rehman_xyz/">
+                    <Image src={twitter} alt="Instagram " />
+                  </Link>
+                  <Link href="https://www.linkedin.com/in/abdul-rehman-a27a1719a/">
+                    <Image src={linkedin} alt="linkedin " />
+                  </Link>
+                </Flex>
+              </DrawerFooter>
+              ``
             </DrawerContent>
           </Drawer>
         </Flex>
@@ -199,9 +214,15 @@ const Navbar = () => {
           </Link>
         </Flex>
         <Flex gap="20px" display={{ base: "none", lg: "flex" }}>
-          <Image className="zoom" src={fb} alt="fb " />
-          <Image className="zoom" src={twitter} alt="twitter " />
-          <Image className="zoom" src={linkedin} alt="linkedin " />
+          <Link href="https://www.facebook.com/profile.php?id=100008928465845">
+            <Image src={fb} alt="fb " />
+          </Link>
+          <Link href="https://www.instagram.com/mr.rehman_xyz/">
+            <Image src={twitter} alt="Instagram " />
+          </Link>
+          <Link href="https://www.linkedin.com/in/abdul-rehman-a27a1719a/">
+            <Image src={linkedin} alt="linkedin " />
+          </Link>
         </Flex>
       </Flex>
     </>
