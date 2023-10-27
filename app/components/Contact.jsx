@@ -28,7 +28,7 @@ const Contact = () => {
         bgColor="#000000 "
         alignItems="center"
         justifyContent="center"
-        p="30px"
+        p="20px"
       >
         <Text fontSize="48px" fontWeight="700" lineHeight="48px " color="white">
           Contact
@@ -36,13 +36,13 @@ const Contact = () => {
       </Flex>
       <Flex
         bgColor="#000000 "
-        p="40px"
+        p={{ base: "10px 30px", md: "40px" }}
         justifyContent="center"
         alignItems="center"
-        gap={{ base: "76", lg: "176 " }}
+        gap={{ base: "10px", lg: "176 " }}
         direction={{ base: "column-reverse", lg: "row" }}
       >
-        <Flex direction="column" p="30px" gap="25px">
+        <Flex direction="column" p={{ base: "10px", md: "30px" }} gap="25px">
           <Input
             color="white"
             border="none"
