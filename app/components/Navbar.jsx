@@ -28,13 +28,13 @@ const Navbar = () => {
     <>
       <Flex
         position="fixed"
-        zIndex="10"
+        zIndex="1"
         w="100%"
         top="0.1"
-        h="80px"
+        h={{ base: "30px", md: "80px" }}
         bgColor="#1D1D1D"
         alignItems="center"
-        p={{ base: " 30px", md: "0px 20px ", lg: "0px 180px" }}
+        p={{ base: " 25px", md: "0px 20px ", lg: "0px 180px" }}
         overflowX="ishidden"
         justifyContent="space-between"
       >
@@ -50,12 +50,11 @@ const Navbar = () => {
           </Heading>
         </Flex>
         <Flex display={{ base: "flex", lg: "none" }}>
-          <IconButton
-            aria-label="Add to friends"
-            ef={btnRef}
-            colorScheme="teal"
+          <HamburgerIcon
+            color="#0AF"
+            finalFocusRef={btnRef}
+            boxSize="10"
             onClick={onOpen}
-            icon={<HamburgerIcon />}
           />
 
           <Drawer
@@ -81,7 +80,7 @@ const Navbar = () => {
                       Home
                     </Text>
                   </Link>
-                  <Link href="/">
+                  <Link href="#about">
                     <Text
                       _hover={{ color: "#0AF" }}
                       fontSize="16px"
@@ -90,7 +89,7 @@ const Navbar = () => {
                       About
                     </Text>
                   </Link>
-                  <Link href="/">
+                  <Link href="#experience">
                     <Text
                       _hover={{ color: "#0AF" }}
                       fontSize="16px"
@@ -99,7 +98,7 @@ const Navbar = () => {
                       Experience
                     </Text>
                   </Link>
-                  <Link href="/">
+                  <Link href="#portfolio">
                     <Text
                       _hover={{ color: "#0AF" }}
                       fontSize="16px"
@@ -108,7 +107,7 @@ const Navbar = () => {
                       Portfolio
                     </Text>
                   </Link>
-                  <Link href="/">
+                  <Link href="#Service">
                     <Text
                       _hover={{ color: "#0AF" }}
                       fontSize="16px"
@@ -117,7 +116,7 @@ const Navbar = () => {
                       Service
                     </Text>
                   </Link>
-                  <Link href="/">
+                  <Link href="#contact">
                     <Text
                       _hover={{ color: "#0AF" }}
                       fontSize="16px"
