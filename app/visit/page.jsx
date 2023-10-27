@@ -8,13 +8,13 @@ const Visit = () => {
   return (
     <Flex direction="column ">
       <Flex direction="column" justifyContent="center" alignItems="center">
-        <Heading fontSize="48px" fontWeight="800">
+        <Heading fontSize={{ base: "34px", md: "48" }} fontWeight="800">
           ABOUT PROJECT
         </Heading>
         <Text
           _selection={{ backgroundColor: "red", color: "white" }}
           textAlign="justify"
-          p="40px"
+          p={{ base: "20px 0px", md: "40px" }}
           w="64%"
         >
           In this project, we have to design and develop an eCommerce website
@@ -25,14 +25,14 @@ const Visit = () => {
         </Text>
       </Flex>
       <Flex direction="column" justifyContent="center" alignItems="center">
-        <Heading fontSize="48px" fontWeight="800">
+        <Heading fontSize={{ base: "34px", md: "48" }} fontWeight="800">
           A SNEEKY PEEKS
         </Heading>
         <Text
           _selection={{ backgroundColor: "red", color: "white" }}
           textAlign="justify"
-          p="40px"
-          // w="63%"
+          p={{ base: "20px 0px", md: "40px" }}
+          w="64%"
         >
           A glimpse of stunning, fully functional open-source eCommerce site
           from initiation to execution.
@@ -61,14 +61,14 @@ const Visit = () => {
         </Flex>
       </Flex>
       <Flex direction="column" justifyContent="center" alignItems="center">
-        <Heading fontSize="48px" fontWeight="800">
+        <Heading fontSize={{ base: "34px", md: "48" }} fontWeight="800">
           CHALLANGE
         </Heading>
         <Text
           _selection={{ backgroundColor: "red", color: "white" }}
           textAlign="justify"
-          p="20px"
-          w="63%"
+          p={{ base: "20px 0px", md: "40px" }}
+          w="64%"
         >
           Topsun Bazar client needed a new look for their website and mobile
           apps - everything to be revamped. They wanted to add more vibrancy to
@@ -91,8 +91,9 @@ const Visit = () => {
         justifyContent="space-evenly"
         // textAlign="center"
         alignItems="center"
+        direction={{ base: "column", md: "row" }}
       >
-        <Flex direction="column" gap="30px">
+        <Flex direction="column" gap="20px" p="20px">
           <Search2Icon boxSize={20} />
           <Heading>
             Client
@@ -103,7 +104,7 @@ const Visit = () => {
             Pakistan
           </Text>
         </Flex>
-        <Flex direction="column" gap="15px">
+        <Flex direction="column" gap="15px" p="20px">
           <CheckCircleIcon boxSize={20} />
           <Heading>
             DEDICATED
@@ -113,16 +114,16 @@ const Visit = () => {
             {" "}
             1 Designer
           </Text>
-          <Text fontSize="30px" fontWeight="700px">
+          <Text fontSize={{ base: "20px", md: "30px" }} fontWeight="700px">
             {" "}
             6 Developers
           </Text>
-          <Text fontSize="30px" fontWeight="700px">
+          <Text fontSize={{ base: "20px", md: "30px" }} fontWeight="700px">
             {" "}
             1 Project Manager
           </Text>
         </Flex>
-        <Flex direction="column" gap="15px">
+        <Flex p="20px" direction="column" gap="15px">
           <LinkIcon boxSize={20} />
           <Heading>
             TIMELINE OF
@@ -141,10 +142,15 @@ const Visit = () => {
         alignItems="center"
         pt="40px"
       >
-        <Heading fontSize="48px" fontWeight="800">
+        <Heading fontSize={{ base: "34px", md: "48" }} fontWeight="800">
           TECHNOLOGY
         </Heading>
-        <Flex gap="40" margin="50px">
+        <Flex
+          gap={{ base: "5", md: "40" }}
+          margin="50px"
+          direction={{ base: "column", lg: "row" }}
+          r
+        >
           <Flex
             direction="column"
             justifyContent="center"
@@ -196,6 +202,7 @@ const Visit = () => {
           <Button
             borderColor="#F17701 "
             mt="40px"
+            mb="40px"
             variant="outline"
             color="#F17701"
             _hover={{ color: "white", backgroundColor: "#F17701" }}
@@ -205,7 +212,7 @@ const Visit = () => {
           </Button>
         </Flex>
       </Flex>
-      <Flex height="500px">hey</Flex>
+      {/* <Flex height="500px">hey</Flex> */}
     </Flex>
   );
 };
