@@ -198,7 +198,7 @@ const Experience = () => {
                 </Button>
               </Link>
             </Flex> */}
-            <Flex direction="column" gap="20px">
+            {/* <Flex direction="column" gap="20px">
               <Flex alignItems="center" gap="10px" className="screen">
                 <img src="/reel2.jpg" />
               </Flex>
@@ -206,10 +206,9 @@ const Experience = () => {
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                my
               >
                 <Heading fontSize="25px" fontWeight="800px">
-                  Job Hunt
+                  Job Hunttt
                 </Heading>
                 <Text
                   fontSize="10px"
@@ -241,19 +240,18 @@ const Experience = () => {
                   </Button>
                 </Link>
               </Flex>
-            </Flex>
+            </Flex> */}
           </Flex>
           <Flex direction="column" gap="20px">
             {" "}
             <Flex direction="column" gap="20px">
-              <Flex alignItems="center" gap="10px" className="screen">
-                <img src="/drink.png" />
+              <Flex alignItems="center" gap="10px" className="screen2">
+                <img src="/drink2.jpg" />
               </Flex>
               <Flex
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                my
               >
                 <Heading fontSize="25px" fontWeight="800px">
                   Drink app
@@ -289,7 +287,7 @@ const Experience = () => {
                 </Link>
               </Flex>
             </Flex>
-            <Flex direction="column" gap="20px">
+            {/* <Flex direction="column" gap="20px">
               <Flex alignItems="center" gap="10px" className="screen">
                 <img src="/drink2.png" />
               </Flex>
@@ -332,7 +330,7 @@ const Experience = () => {
                   </Button>
                 </Link>
               </Flex>
-            </Flex>
+            </Flex> */}
           </Flex>
         </Flex>
       </Flex>
