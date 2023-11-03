@@ -38,7 +38,7 @@ const Stack = () => {
       color="#0AF"
       letterSpacing="1.8px"
     >
-      Full Stack Software Developer
+      Frontend Website Developer
     </Text>
   );
 };
