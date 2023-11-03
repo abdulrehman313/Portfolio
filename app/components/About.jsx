@@ -72,11 +72,10 @@ const About = () => {
             w={{ base: "auto", md: "544px" }}
             color="#747474"
           >
-            8+ years of professional experience in full stack development with
-            NodeJS, Java Play Framework, ASP.NET MVC and WebApi, MSSQL, MYSQL
-            for backend services and React, React-native for front-end and
-            mobile applications. I love to be a software developer rather than a
-            language dependent developer.
+            I am Fresh Graduate and I started Internhip plan In Geekybugs. I
+            Started My Journey with Frontend Development In REACT JS,NEXT JS and
+            CHAKRA UI.I love to be a software developer rather than a language
+            dependent developer.
           </Text>
           <Button
             mt="40px"
